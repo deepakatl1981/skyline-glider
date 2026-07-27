@@ -1,0 +1,17 @@
+# Android / Gradle
+*.iml
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+.kotlin/
+*.apk
+*.aab
+
+# IDE
+.idea/
+
+# macOS
+.DS_Store
