@@ -10,6 +10,12 @@ local.properties
 *.apk
 *.aab
 
+# Signing secrets — losing these means you can never update the Play listing,
+# and leaking them means someone else can sign as you. Back them up privately.
+keystore.properties
+*.jks
+*.keystore
+
 # IDE
 .idea/
 

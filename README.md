@@ -10,18 +10,23 @@ binary assets. Every building, character, coin and sound effect is generated in 
 
 ## Build & run
 
-1. Open the `skyline-glider` folder in **Android Studio** (Koala / 2024.1 or newer).
-2. Let Gradle sync — it will fetch the wrapper and dependencies automatically.
-3. Run on a device or emulator (minSdk 24, targetSdk 35).
+1. Open the `skyline-glider` folder in **Android Studio**.
+2. Let Gradle sync. You need SDK Platform 36 installed
+   (`Tools → SDK Manager → SDK Platforms → Android 16`).
+3. Run on a device or emulator. minSdk 24, targetSdk 36.
 
-If you prefer the command line and have Gradle installed locally, generate the wrapper
-first — the binary `gradle-wrapper.jar` isn't checked in:
+The Gradle wrapper binary isn't checked in yet. To build from the command line,
+generate it first via Android Studio's Gradle panel
+(*Tasks → build setup → wrapper*), or with a local Gradle install:
 
 ```bash
 cd skyline-glider
-gradle wrapper --gradle-version 8.7
+gradle wrapper --gradle-version 8.11.1
 ./gradlew assembleDebug
 ```
+
+**Publishing to Google Play?** See [RELEASE.md](RELEASE.md) for the full path,
+including the closed-testing requirement that applies to new personal accounts.
 
 ---
 
